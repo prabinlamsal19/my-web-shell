@@ -5,6 +5,7 @@ import { ABOUT } from "./commands/about"
 import { DEFAULT } from "./commands/default";
 import { CONFIGS } from "./commands/configs";
 import { createWhoami } from "./commands/whoami";
+import { GRATEFUL_PROMPT, getGratefulResponse } from "./commands/grateful";
 
 //mutWriteLines gets deleted and reassigned
 let mutWriteLines = document.getElementById("write-lines");
@@ -13,6 +14,7 @@ let tempInput = ""
 let userInput : string;
 let isSudo = false;
 let isPasswordInput = false;
+let isGratefulInput = false;
 let passwordCounter = 0;
 let bareMode = false;
 
@@ -28,7 +30,7 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "cv", "banner", "clear"];
+const COMMANDS = ["help", "about", "projects", "whoami", "repo", "cv", "banner", "clear", "grateful"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
@@ -144,6 +146,12 @@ function arrowKeys(e : string) {
 }
 
 function commandHandler(input : string) {
+  if (isGratefulInput) {
+    writeLines(getGratefulResponse());
+    isGratefulInput = false;
+    return;
+  }
+
   if(input.startsWith("rm -rf") && input.trim() !== "rm -rf") {
     if (isSudo) {
       if(input === "rm -rf src" && !bareMode) {
@@ -240,6 +248,14 @@ function commandHandler(input : string) {
         link.click();
         document.body.removeChild(link);
       }, 500);
+      break;
+    case 'grateful':
+      if (bareMode) {
+        writeLines(["I am just a shell.", "<br>"]);
+        break;
+      }
+      writeLines(GRATEFUL_PROMPT);
+      isGratefulInput = true;
       break;
     case 'linkedin':
       //add stuff here
