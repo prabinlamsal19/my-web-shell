@@ -1,0 +1,79 @@
+{
+  "ascii": [
+    "                   -`",
+    "                  .o+`",
+    "                 `ooo/",
+    "                `+oooo:",
+    "               `+oooooo:",
+    "               -+oooooo+:",
+    "             `/:-:++oooo+:",
+    "            `/++++/+++++++:",
+    "           `/++++++++++++++:",
+    "          `/+++ooooooooooooo:",
+    "         ./ooosssso++osssssso+`",
+    "        .oossssso-````/ossssss+`",
+    "       -osssssso.      :ssssssso.",
+    "      :osssssss/        osssso+++.",
+    "     /ossssssss/        +ssssooo/-",
+    "   `/ossssso+/:-        -:/+osssso+-",
+    "  `+sso+:-`                 `.-/+oso:",
+    " `++:.                           `-/+/",
+    " .`                                 `/"
+  ],
+  "title": "Prabin Lamsal",
+  "username": "prlams74",
+  "hostname": "archiso",
+  "password": "050823",
+  "repoLink": "https://github.com/prabinlamsal19?tab=repositories",
+  "social": {
+    "email": "prabinlamsal74@gmail.com",
+    "github": "prabinlamsal19",
+    "linkedin": "https://www.linkedin.com/in/prabin-lamsal-1914aa1b3/",
+    "goodreads": "https://www.goodreads.com/user/show/162377062?ref=nav_profile_l",
+    "monkeytype": "https://monkeytype.com/account",
+    "myanimelist": "https://myanimelist.net/profile/_black_petal",
+    "instagram": "https://www.instagram.com/_prabinlamsal/",
+    "youtube": "https://www.youtube.com/@prabinlamsal5125"
+  },
+  "aboutGreeting": "My name is Prabin Lamsal. I am passionate about software development. I have not found my actual niche yet so my knowledge is all over the place. I am a full time Flutter/NextJS developer as of now.",
+  "configs": [
+    [
+      "NVim",
+      "NVChad with flutter and nodejs.",
+      "https://github.com/prabinlamsal19/my-nvim-config"
+    ],
+    [
+      "i3",
+      "Customized, good tooling, vim-like bindings.",
+      "https://github.com/prabinlamsal19/my-vim-like-i3"
+    ],
+    [
+      "VSCode",
+      "Beautiful bindings.",
+      "https://github.com/prabinlamsal19/my-VScodeVim-Config"
+    ]
+  ],
+  "colors": {
+    "background": "#1A0F00",
+    "foreground": "#FFB000",
+    "banner": "#FF8C00",
+    "border": {
+      "visible": true,
+      "color": "#CC7722"
+    },
+    "prompt": {
+      "default": "#CC8844",
+      "user": "#FFAA33",
+      "host": "#FF9933",
+      "input": "#FFCC66"
+    },
+    "link": {
+      "text": "#FFA500",
+      "highlightColor": "#FF8C00",
+      "highlightText": "#1A0F00"
+    },
+    "commands": {
+      "textColor": "#FFB84D"
+    }
+  }
+}
