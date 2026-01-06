@@ -200,7 +200,7 @@ function commandHandler(input : string) {
       break;
     case 'neofetch':
       if(bareMode) {
-        writeLines(["WebShell v1.0.0", "<br>"])
+        writeLines(["Prabin Lamsal v2.0.0", "<br>"])
         break;
       }
       writeLines(BANNER);
