@@ -30,10 +30,11 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "cv", "banner", "clear", "grateful"];
+const COMMANDS = ["help", "about", "projects", "whoami", "repo", "cv", "banner", "clear", "grateful", "blogs"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
+const BLOGS_LINK = command.blogsLink;
 
 const scrollToBottom = () => {
   const MAIN = document.getElementById("main");
@@ -248,6 +249,10 @@ function commandHandler(input : string) {
         link.click();
         document.body.removeChild(link);
       }, 500);
+      break;
+    case 'blogs':
+      writeLines(["Redirecting to blogs...", "<br>"]);
+      window.open(BLOGS_LINK, '_blank');
       break;
     case 'grateful':
       if (bareMode) {

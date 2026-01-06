@@ -2,7 +2,7 @@ const helpObj = {
   "commands": [
     [
     "'about'",
-    "Who made this website?",
+    "About me.",
     ],
     [
       "'configs'",
@@ -24,7 +24,7 @@ const helpObj = {
       "Download my CV"
     ],
     ["'neofetch'",
-      "Display the cool logo."
+      "i use arch btw."
     ],
     [
       "'clear'",
@@ -33,6 +33,10 @@ const helpObj = {
     [
       "'grateful'",
       "Practice gratitude."
+    ],
+    [
+      "'blogs'",
+      "Visit my blogs."
     ]
   ],
 }

@@ -57,9 +57,11 @@ const createBanner = () : string[] => {
     banner.push(eleToPush);
   });  
   banner.push("<br>");
-  banner.push("Welcome to WebShell v1.0.0");
+  banner.push("Welcome to my shell.");
+  banner.push("Type <span class='command'>'about'</span> for more about me.");
+  banner.push(`Type <span class='command'>'blogs'</span> to view my blogs or click <a href='${command.blogsLink}' target='_blank'>here</a>.`);
+  banner.push("<br>");
   banner.push("Type <span class='command'>'help'</span> for a list of all available commands.");
-  banner.push(`Type <span class='command'>'repo'</span> to view the GitHub repository or click <a href='${command.repoLink}' target='_blank'>here</a>.`);
   banner.push("<br>");
   return banner;
 }
